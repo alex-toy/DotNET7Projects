@@ -1,4 +1,5 @@
 using JWTApp.API;
+using JWTApp.API.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.ConfigureDbContext();
 
 builder.ConfigureAuthentication();
+
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 

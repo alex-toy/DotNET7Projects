@@ -13,5 +13,11 @@ Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 ```
 
+### Migrations
+```
+Add-Migration init
+Update-Database
+```
+
 - virtual machine
 <img src="/pictures/monitoring.png" title="create vm"  width="900">

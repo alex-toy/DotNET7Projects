@@ -1,4 +1,4 @@
-namespace JWTApp.API
+namespace JWTApp.API.Dtos
 {
     public class WeatherForecast
     {
