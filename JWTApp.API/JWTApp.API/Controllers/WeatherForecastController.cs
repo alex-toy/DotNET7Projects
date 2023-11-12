@@ -20,7 +20,7 @@ namespace JWTApp.API.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet("GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -32,8 +32,8 @@ namespace JWTApp.API.Controllers
             .ToArray();
         }
 
-        //[Authorize]
-        [HttpGet(Name = "GetWeatherForecastSecure")]
+        [Authorize]
+        [HttpGet("/GetWeatherForecastSecure")]
         public IEnumerable<WeatherForecast> GetSecure()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

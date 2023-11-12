@@ -15,7 +15,7 @@ namespace JWTApp.API.Services
             _config = config;
         }
 
-        public JwtSecurityToken GenerateToken(LoginDto login)
+        private JwtSecurityToken GenerateToken(LoginDto login)
         {
             var claims = new[]
             {

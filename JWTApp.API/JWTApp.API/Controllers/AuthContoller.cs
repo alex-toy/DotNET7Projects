@@ -14,20 +14,19 @@ namespace JWTApp.API.Controllers
         private readonly AppDbContext _appDbContext;
         private readonly ITokenService _token;
 
-        public AuthContoller(AppDbContext appDbContext)
+        public AuthContoller(AppDbContext appDbContext, ITokenService token)
         {
             _appDbContext = appDbContext;
+            _token = token;
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto login)
         {
-            if (ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             User user = _appDbContext.Users.FirstOrDefault(u => u.UserName == login.UserName && u.Password == login.Password);
             if (user == null) return Unauthorized();
-
-            JwtSecurityToken token = _token.GenerateToken(login);
 
             string tokenHandler = _token.GenerateTokenHandler(login);
 

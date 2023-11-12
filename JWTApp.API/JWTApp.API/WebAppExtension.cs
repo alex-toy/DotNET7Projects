@@ -43,7 +43,6 @@ namespace JWTApp.API
             authenticationBuilder.AddJwtBearer(options => {
                 options.TokenValidationParameters = tokenValidationParameters;
             });
-
         }
     }
 }

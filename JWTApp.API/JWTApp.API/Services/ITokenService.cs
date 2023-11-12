@@ -5,7 +5,6 @@ namespace JWTApp.API.Services
 {
     public interface ITokenService
     {
-        JwtSecurityToken GenerateToken(LoginDto login);
         string GenerateTokenHandler(LoginDto login);
     }
 }

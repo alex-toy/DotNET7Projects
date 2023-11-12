@@ -19,5 +19,13 @@ Add-Migration init
 Update-Database
 ```
 
-- virtual machine
-<img src="/pictures/monitoring.png" title="create vm"  width="900">
+### Run App
+
+- get weather forecast without authentication
+<img src="/pictures/app.png" title="run app"  width="900">
+
+- login
+<img src="/pictures/app1.png" title="run app"  width="900">
+
+- get token
+<img src="/pictures/app2.png" title="run app"  width="900">
