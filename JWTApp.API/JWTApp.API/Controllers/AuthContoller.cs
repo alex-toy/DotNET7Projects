@@ -8,7 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 namespace JWTApp.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class AuthContoller : ControllerBase
     {
         private readonly AppDbContext _appDbContext;

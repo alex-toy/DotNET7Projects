@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace JWTApp.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -33,7 +33,7 @@ namespace JWTApp.API.Controllers
         }
 
         [Authorize]
-        [HttpGet("/GetWeatherForecastSecure")]
+        [HttpGet("GetWeatherForecastSecure")]
         public IEnumerable<WeatherForecast> GetSecure()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
