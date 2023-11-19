@@ -2,13 +2,22 @@
 
 ## Generic Repository and Unit of Work .NET 7
 
-In this project, we will see how you can implement the Generic Repository Pattern and Unit of Work.This pattern provides the following benefits: 
+In this project, we will see how to implement the **Generic Repository Pattern** and **Unit of Work**.This pattern provides the following benefits: 
 - reduces redundancy of code, 
 - forces developper to work using the same pattern, 
 - creates possibility of less error,
 - makes it easy to maintain the centralized data access logic.
 
-We will dive deep into Entity Framework Relations types : One to Many, One to One and Many to Many. 
+We will dive deep into Entity Framework Relations types : One to Many, One to One and Many to Many.
+
+### Nuget Packages
+```
+Microsoft.EntityFrameworkCore
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+```
 
 
 ## Create and use JSON Web Tokens with .NET 7
