@@ -19,7 +19,7 @@ namespace MovieManagement.DataAccess
             Movie a2 = new Movie() { Id = 2, Name = "Matrix", Description = "in the matrix", ActorId = 2 };
             Movie a3 = new Movie() { Id = 3, Name = "Spiderman", Description = "jumping over skyscrapers", ActorId = 3 };
 
-            modelBuilder.Entity<Actor>().HasData(a1, a2, a3);
+            modelBuilder.Entity<Movie>().HasData(a1, a2, a3);
         }
     }
 }
