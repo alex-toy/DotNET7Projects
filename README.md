@@ -11,10 +11,10 @@ In this project, we will see how to implement the **Generic Repository Pattern**
 We will dive deep into Entity Framework Relations types : One to Many, One to One and Many to Many.
 
 ### Nuget Packages
+
+- in *MovieManagement.DataAccess*
 ```
 Microsoft.EntityFrameworkCore
-Microsoft.AspNetCore.Authentication.JwtBearer
-Microsoft.EntityFrameworkCore.Design
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 ```
