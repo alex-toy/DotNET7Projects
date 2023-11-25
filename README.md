@@ -37,6 +37,11 @@ Update-Database
 - check that the migration is correct
 <img src="/pictures/migration.png" title="migration"  width="900">
 
+### Run App
+
+- get actors
+<img src="/pictures/actors.png" title="get actors"  width="900">
+
 
 ## Create and use JSON Web Tokens with .NET 7
 

@@ -26,7 +26,7 @@ namespace MovieManagement.DataAccess.Implementation
             _context.Dispose();
         }
 
-        public int save()
+        public int Save()
         {
             return _context.SaveChanges();
         }

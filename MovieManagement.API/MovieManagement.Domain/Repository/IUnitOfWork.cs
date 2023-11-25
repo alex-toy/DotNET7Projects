@@ -6,6 +6,6 @@
         IMovieRepository MovieRepository { get; }
         IGenreRepository GenreRepository { get; }
         IBiographyRepository BiographyRepository { get; }
-        int save();
+        int Save();
     }
 }
