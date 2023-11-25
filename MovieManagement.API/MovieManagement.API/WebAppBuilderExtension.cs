@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MovieManagement.DataAccess.Context;
+using MovieManagement.DataAccess.Implementation;
+using MovieManagement.Domain.Repository;
 
 namespace MovieManagement.API
 {
@@ -12,6 +14,11 @@ namespace MovieManagement.API
                 string? connectionString = builder.Configuration.GetSection("ConnectionStrings:MovieConnectionString").Value;
                 options.UseSqlServer(connectionString);
             });
+        }
+
+        public static void ConfigureUnitOfWork(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
     }
 }
